@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>WordGuess Game</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <h1>WordGuess Game</h1>
+
+  <div class="wordguess-input-container">
+    <input id="wordguess-input" type="text" maxlength="5">
+    <button class="wordguess-input-btn" onclick="handleGuess()">Guess</button>
+    <button class="wordguess-input-btn" onclick="handleBackspace()">Backspace</button>
+  </div>
+
+  <div class="wordguess-result-container">
+    <p id="wordguess-result"></p>
+  </div>
+
+  <div class="wordguess-keyboard-container">
+    <div class="wordguess-keyboard-row">
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('A')">A</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('B')">B</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('C')">C</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('D')">D</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('E')">E</button>
+    </div>
+    <div class="wordguess-keyboard-row">
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('F')">F</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('G')">G</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('H')">H</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('I')">I</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('J')">J</button>
+    </div>
+    <div class="wordguess-keyboard-row">
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('K')">K</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('L')">L</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('M')">M</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('N')">N</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('O')">O</button>
+    </div>
+    <div class="wordguess-keyboard-row">
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('P')">P</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('Q')">Q</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('R')">R</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('S')">S</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('T')">T</button>
+    </div>
+    <div class="wordguess-keyboard-row">
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('U')">U</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('V')">V</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('W')">W</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('X')">X</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('Y')">Y</button>
+    </div>
+    <div class="wordguess-keyboard-row">
+      <button class="wordguess-keyboard-btn" onclick="handleLetter('Z')">Z</button>
+      <button class="wordguess-keyboard-btn" onclick="handleLetter(' ')">Space</button>
+    </div>
+  </div>
+
+  <div class="wordguess-guesses-container">
+    <p id="wordguess-guesses"></p>
+  </div>
+
+  <button id="wordguess-dark-mode-btn" class="wordguess-dark-mode-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
